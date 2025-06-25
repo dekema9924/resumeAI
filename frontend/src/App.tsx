@@ -1,13 +1,16 @@
-import { Routes, Route } from "react-router-dom";
 import Header from './components/Header'
+import Hero from './pages/LandingPage/Hero'
+import Footer from './components/Footer'
 
 function App() {
 
 
   return (
     <>
-      <div className="w-10/12 m-auto ">
+      <div className="m-auto ">
         <Header />
+        <Hero />
+        <Footer />
       </div>
     </>
   )

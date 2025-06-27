@@ -18,7 +18,7 @@ import FadeInWhenVisible from '../../components/FadeInWhenVisible';
 function Service() {
     return (
         <>
-            <section className='mt-22 pt-12 bg-[#EEF5FE]  flex flex-col items-center justify-center gap-6 pb-22'>
+            <section id='services' className='mt-22 pt-12 bg-[#EEF5FE]  flex flex-col items-center justify-center gap-6 pb-22'>
                 <Box className='flex bg-white w-fit px-4 rounded-2xl m-auto'>
                     <p className='font-semibold text-xs'><FileUploadIcon sx={{ color: 'blue' }} />Upload your Resume in pdf or docx</p>
                 </Box>
@@ -37,7 +37,7 @@ function Service() {
                 <FadeInWhenVisible>
                     <div className='flex flex-col items-center justify-center gap-4 mt-9  '>
                         <p className='font-bold md:hidden'>What you can upload</p>
-                        <div className='flex flex-col gap-5 md:gap-0 md:flex-row items-center justify-between md:w-[800px] m-auto  md:p-9 lg:p-0'>
+                        <div className='flex flex-col gap-5 md:gap-0 md:flex-row items-center justify-between md:w-[800px] m-auto w-96  md:p-9 lg:p-0'>
                             <ul className='list-none  ml-5 text-sm text-gray-600 mt-6 flex md:flex-col gap-3 flex-wrap justify-center md:items-start'>
                                 <p className='font-bold hidden md:block mb-6'>What you can upload:</p>
 
@@ -76,7 +76,7 @@ function Service() {
                                 <TrendingFlatIcon sx={{ fontSize: 44, color: 'oklch(62.3% 0.214 259.815)' }} />
                             </Box>
                             <div>
-                                <div className='border border-dashed w-full h-80 rounded-lg flex flex-col items-center justify-center'>
+                                <div className='border border-dashed md:w-full w-96 m-auto md:m-0 h-80 rounded-lg flex flex-col items-center justify-center '>
                                     <span className='bg-blue-500 text-white text-center flex items-center justify-center h-14 rounded-md font-bold w-14 '>
                                         <BackupIcon sx={{ fontSize: 35 }} />
                                     </span>
@@ -92,7 +92,7 @@ function Service() {
 
                                 </div>
 
-                                <div className='flex items-center gap-5 mt-6'>
+                                <div className='flex md:flex-row flex-col items-center gap-5 mt-6'>
                                     <div className='bg-white w-10/12 rounded-lg shadow-xl p-4 shadow-gray-600 h-34'>
                                         <div className='flex items-center gap-2 '>
                                             <span className='w-6 text-white rounded-full text-center h-6 bg-blue-700 flex items-center justify-center '><SmartToyIcon sx={{ fontSize: 16 }} /></span>

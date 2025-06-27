@@ -6,13 +6,20 @@ import Service from './Service';
 import Stats from './Stats';
 import Features from './Features';
 import Pricing from './Pricing';
+import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
+import { useNavigate } from 'react-router-dom';
 
 
 
 function Hero() {
+    const navigate = useNavigate();
     return (
         <>
-            <main className='mt-40'>
+            <main id='hero' className='mt-40 relative'>
+                <a className='bg-blue-500 w-14 rounded-full h-14 text-center pt-3 fixed bottom-10 right-10' href="#hero">
+                    <ArrowUpwardIcon className='text-white' />
+                </a>
+
                 <div className='flex items-center gap-3  h-6 w-fit px-6 rounded-3xl m-auto bg-blue-200 text-blue-600 text-sm'>
                     <span className='w-2 h-2 rounded-full bg-green-600  flex items-center justify-center'>
                         <span className='w-2 h-2 rounded-full bg-green-400 block animate-pulse'></span>
@@ -43,7 +50,7 @@ function Hero() {
                         className="text-xl text-gray-600 font-bold text-center"
                         repeat={Infinity}
                     />
-                    <button className='bg-blue-500 text-white h-10 w-44 rounded-lg text-sm flex items-center justify-center cursor-pointer'>Upload my Resume <UploadFileIcon sx={{ borderLeft: 1, height: '100%', marginLeft: 1 }} /></button>
+                    <button onClick={() => navigate('/login')} className='bg-blue-500 text-white h-10 w-44 rounded-lg text-sm flex items-center justify-center cursor-pointer'>Register Now <UploadFileIcon sx={{ borderLeft: 1, height: '100%', marginLeft: 4 }} /></button>
                 </section>
                 <Stats />
                 <Service />
